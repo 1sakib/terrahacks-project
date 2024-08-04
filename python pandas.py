@@ -5,7 +5,10 @@ pd.set_option("display.max_columns", None)
 pd.set_option("display.max_rows", None)
 x = ['Dehumidifier', 'Residential cloths dryer', 'Rsidential cloths washer', 'refridgerator','oven/stove',
      'dishwasher', 'Air conditioner', 'Toaster', 'Coffee maker']
+
 input = "refridgerator"
+input2 = 'Estimated Annual Energy Use (kWh/yr)'
+
 index = 0
 
 for i in range(len(x)):
@@ -14,4 +17,4 @@ for i in range(len(x)):
         break
 
 
-print(xls.loc[xls.index[index:index+1],['Estimated Annual Energy Use (kWh/yr)']])
+print(xls.loc[xls.index[index:index+1],[input2]])
