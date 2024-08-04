@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ApplianceDex</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="./static/style.css">
 </head>
 
-<body background="/terrahacks/images/bg.webp">
+<body background="/terrahacks/static/images/bg.webp">
     <br><br><br>
     <div class="logo">
-        <img src="/terrahacks/images/bg2.png" alt="Image of ApplianceDex" width="600px">
+        <img src="{{ url_for('static', filename='/terrahacks/static/images/bg2.png') }}" alt="Image of ApplianceDex" width="600px">
         <br>
     </div>
     <br><br><br>
-    <form action="/terrahacks/pages/query.html" method="get" class="search-bar">
-        <div class="search">
+    <form action="/process-data" class="search-bar" method="post">
+        <div>
             <span class="material-symbols-outlined">search</span>
-            <input class= "search-input" type="search" placeholder="Enter Appliance Model #">
+            <input id="search-input" type="search" name="in" placeholder="Enter Appliance Model #">
+            <button type="submit">Search</button>
         </div>
     </form>
     <br>
@@ -37,8 +37,8 @@
     </div>
 
     <div class="about-page">
-        <h1><a href="/terrahacks/pages/about.html" style="text-decoration:none ; color: darkolivegreen;">About Us</a></h1>
+        <h1><a href="/about" style="text-decoration:none ; color: darkolivegreen;">About Us</a></h1>
     </div>
-    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>

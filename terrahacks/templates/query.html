@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Query</title>
-    <link rel="stylesheet" href="/terrahacks/style.css">
+    <link rel="stylesheet" href="./static/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body class="gradient">
-    <form>
-        <div class="search">
-            <span class="material-symbols-outlined">search</span>
-            <input class= "search-input" type="search" placeholder="Search">
-        </div>
+    <form action="/process-data" class="search-bar" method="post">
+      <div>
+          <span class="material-symbols-outlined">search</span>
+          <input id="search-input" type="search" name="in" placeholder="Enter Appliance Model #">
+          <button type="submit">Search</button>
+      </div>
     </form>
     <br>
     <div class="label">
@@ -31,7 +32,10 @@
     </div>
 
     <div class="back2">
-        <h2><a href="/terrahacks/index.html" style="text-decoration:none ; color:rgb(26, 68, 147) ;">Back to Homepage</a></h2>
+        <h2>
+          <a href="./" 
+          style="text-decoration:none ; color:rgb(26, 68, 147) ;">Back to Homepage</a>
+        </h2>
         <br>
     </div>
 
@@ -40,8 +44,8 @@
           <img src="/terrahacks/images/logo.png" class="responsive">
         </div>
         <div class="right">
-          <h2>[Fridge Model]</h2>
-          <h2>[Product Description]</h2>
+          <h2>{{FridgeModel}}</h2>
+          <h2>{{ProductDescription}}</h2>
           <h2></h2>
         </div>
       </div>

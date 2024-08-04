@@ -22,17 +22,10 @@ def get_gpt_response(user_input):
     
     return response.choices[0].message.content
 
-def chat():
-    while True:
-        user_input = input("You: ")
-        if user_input == 'exit':
-            print("Chatbot: Goodbye!")
-            break
-        response = get_gpt_response(user_input)
-        x = response.split()
-        print(f"Chatbot: {x}")
-        print(type(x))
-
-if  __name__ == "__main__":
-    chat()
-
+def chat(model):
+    
+    user_input = f"please tell me how ecofriendly a {model} is "
+    print(user_input)
+    response = get_gpt_response(user_input)
+    x = response.split()
+    return (response)

@@ -4,6 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 import time
 import re
+
 def format_title(title):
     """Remove leading non-capital alphabetical characters and capitalize the first letter."""
     title = re.sub(r'^[^A-Z]+', '', title)
@@ -130,23 +131,24 @@ def get_results(search_term):
         href = a_tag.get_attribute("href")
         if (href[len(href)-5:].isdigit()) : 
             return href
-        
     return None
 
-x = get_results("ELFW7738AA")
-print("HELlo")
-print(x)
-print("WHATSUP")
-y = (scrape_energystar_product(x))
-a,b = split_and_process_array(y)
+def format_arrays(array1, array2):
+    # Initialize an empty string to accumulate the formatted result
+    formatted_result = ""
 
-print("Processed Data 1:")
-for item in a:
-    print(item)
+    # Format the first array
+    for item in array1:
+        formatted_result += f"{item[0]}: {item[1]}\n"
 
-print("\nProcessed Data 2:")
-for item in b:
-    print(item)
+    # Format the second array
+    for item in array2:
+        formatted_result += f"{item[0]}: {item[1]}\n"
+
+    return formatted_result
+
+
+
 
 
 
