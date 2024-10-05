@@ -26,7 +26,7 @@ The next step for ApplianceDex is to add a Life Cycle Analysis (LCA) for the mat
 # Built with :  on, Selenium, Flask
 
 # Contact 
-Sakib Uddin - 1sakib.uddin@gmail.com
-Farhan Sifar - fxrhan.s13@gmail.com
-Prince Xu - https://www.linkedin.com/in/prince-xu-492995308/
-Eishan Ashraf - Ashrafeishan@gmail.com 
+Sakib Uddin - 1sakib.uddin@gmail.com  
+Farhan Sifar - fxrhan.s13@gmail.com  
+Prince Xu - https://www.linkedin.com/in/prince-xu-492995308/  
+Eishan Ashraf - Ashrafeishan@gmail.com  
