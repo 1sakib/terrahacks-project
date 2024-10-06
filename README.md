@@ -23,8 +23,6 @@ Through this project, we were able to deepen our understanding of languages we p
 The next step for ApplianceDex is to add a Life Cycle Analysis (LCA) for the materials used to make appliances. By following the lifespan of the materials used to make the appliance, we can further improve the eco-friendly rating. For example, users will be able to see where the materials were imported from and which materials will be recycled or combusted when the appliance reaches the end of its lifespan.
 
 
-# Built with :  on, Selenium, Flask
-
 # Contact 
 Sakib Uddin - 1sakib.uddin@gmail.com  
 Farhan Sifar - fxrhan.s13@gmail.com  
